@@ -1,9 +1,21 @@
+/**
+ * Sorting Example
+ * 
+ * @author NC03
+ * @date November 19, 2020
+ * @file
+ * 
+ */
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
 
 using namespace std;
 
+/**
+ * Enumeration of sorting algorithms
+ * 
+ */
 enum class SortingAlgorithm
 {
     BUBBLE_SORT,
@@ -37,6 +49,13 @@ int main()
     return 0;
 }
 
+/**
+ * Print Array
+ * 
+ * 
+ * @param arr The array to print
+ * @param size The number of elements in the array
+ */
 void print(const int arr[], const int size)
 {
     for (int i = 0; i < size - 1; i++)
@@ -49,6 +68,13 @@ void print(const int arr[], const int size)
     }
 }
 
+/**
+ * Swaps Variables
+ * 
+ * @param a The reference to the first value to swap
+ * @param b The reference to the second value to swap
+ * 
+ */
 void swap(int &a, int &b)
 {
     int temp = a;
@@ -56,6 +82,13 @@ void swap(int &a, int &b)
     b = temp;
 }
 
+/**
+ * Sorts the given array using the selection sort algorithm
+ * 
+ * @param arr The array to sort
+ * @param size The number of elements in the array
+ * 
+ */
 void selectionSort(int arr[], int size)
 {
     for (int startIndex = 0; startIndex < size - 1; startIndex++)
@@ -73,6 +106,14 @@ void selectionSort(int arr[], int size)
         swap(arr[startIndex], arr[swapIndex]);
     }
 }
+
+/**
+ * Sorts the given array using the bubble sort algorithm
+ * 
+ * @param arr The array to sort
+ * @param size The number of elements in the array
+ * 
+ */
 void bubbleSort(int arr[], int size)
 {
     for (int endIndex = size - 1; endIndex >= 1; endIndex--)
@@ -87,6 +128,14 @@ void bubbleSort(int arr[], int size)
     }
 }
 
+/**
+ * Sorts the given array using the specified algorithm
+ * 
+ * @param arr The array to sort
+ * @param size The number of elements in the array
+ * @param algorithm The algorithm to use
+ * 
+ */
 void sort(int arr[], int size, const SortingAlgorithm algorithm)
 {
     switch (algorithm)
