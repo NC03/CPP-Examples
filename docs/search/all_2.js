@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['print_2',['print',['../sorting_8cpp.html#acfc240c66f31dc0617685dcd346b20cc',1,'sorting.cpp']]]
+  ['insertionsort_3',['insertionSort',['../sorting_8h.html#a1e0b87ba7509563c68cf5ebea918bccd',1,'sorting']]]
 ];

@@ -1,3 +1,10 @@
+/**
+ * Sorting Methods
+ * 
+ * @author NC03
+ * @date November 23, 2020
+ * @file
+ */
 #ifndef SORTING_H
 #define SORTING_H
 
@@ -266,7 +273,7 @@ namespace sorting
     }
 
     /**
-     * Sorts the given array using the counting sort algorithm
+     * Sorts the given array using the counting sort algorithm \n
      * PRECONDITION: The elements must be nonnegative
      * 
      * @param arr The array to sort
@@ -305,7 +312,7 @@ namespace sorting
     }
 
     /**
-     * Sorts the given array using the radix sort algorithm
+     * Sorts the given array using the radix sort algorithm \n
      * PRECONDITION: The elements must be nonnegative
      * 
      * @param arr The array to sort

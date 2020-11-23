@@ -1,27 +1,30 @@
 var indexSectionsWithContent =
 {
-  0: "bcps",
-  1: "s",
-  2: "bps",
-  3: "s",
-  4: "c"
+  0: "bcilmnpqrs",
+  1: "n",
+  2: "ls",
+  3: "bcimpqrs",
+  4: "s",
+  5: "c"
 };
 
 var indexSectionNames =
 {
   0: "all",
-  1: "files",
-  2: "functions",
-  3: "enums",
-  4: "pages"
+  1: "classes",
+  2: "files",
+  3: "functions",
+  4: "enums",
+  5: "pages"
 };
 
 var indexSectionLabels =
 {
   0: "All",
-  1: "Files",
-  2: "Functions",
-  3: "Enumerations",
-  4: "Pages"
+  1: "Classes",
+  2: "Files",
+  3: "Functions",
+  4: "Enumerations",
+  5: "Pages"
 };
 

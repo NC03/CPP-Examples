@@ -2,15 +2,13 @@
  * Sorting Example
  * 
  * @author NC03
- * @date November 19, 2020
+ * @date November 23, 2020
  * @file
- * 
  */
 #include "sorting.h"
 
 using namespace std;
 using namespace sorting;
-
 
 int main()
 {
