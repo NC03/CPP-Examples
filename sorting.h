@@ -9,9 +9,9 @@
 namespace sorting
 {
     /**
- * Enumeration of sorting algorithms
- * 
- */
+     * Enumeration of sorting algorithms
+     * 
+     */
     enum class SortingAlgorithm
     {
         BUBBLE_SORT,
@@ -25,12 +25,12 @@ namespace sorting
     };
 
     /**
- * Print Array
- * 
- * 
- * @param arr The array to print
- * @param size The number of elements in the array
- */
+     * Print Array
+     * 
+     * 
+     * @param arr The array to print
+     * @param size The number of elements in the array
+     */
     void print(const int arr[], const int size)
     {
         for (int i = 0; i < size - 1; i++)
@@ -44,12 +44,12 @@ namespace sorting
     }
 
     /**
- * Swaps Variables
- * 
- * @param a The reference to the first value to swap
- * @param b The reference to the second value to swap
- * 
- */
+     * Swaps Variables
+     * 
+     * @param a The reference to the first value to swap
+     * @param b The reference to the second value to swap
+     * 
+     */
     void swap(int &a, int &b)
     {
         int temp = a;
@@ -58,12 +58,12 @@ namespace sorting
     }
 
     /**
- * Sorts the given array using the selection sort algorithm
- * 
- * @param arr The array to sort
- * @param size The number of elements in the array
- * 
- */
+     * Sorts the given array using the selection sort algorithm
+     * 
+     * @param arr The array to sort
+     * @param size The number of elements in the array
+     * 
+     */
     void selectionSort(int arr[], int size)
     {
         for (int startIndex = 0; startIndex < size - 1; startIndex++)
@@ -83,12 +83,12 @@ namespace sorting
     }
 
     /**
- * Sorts the given array using the bubble sort algorithm
- * 
- * @param arr The array to sort
- * @param size The number of elements in the array
- * 
- */
+     * Sorts the given array using the bubble sort algorithm
+     * 
+     * @param arr The array to sort
+     * @param size The number of elements in the array
+     * 
+     */
     void bubbleSort(int arr[], int size)
     {
         for (int endIndex = size - 1; endIndex >= 1; endIndex--)
@@ -104,12 +104,12 @@ namespace sorting
     }
 
     /**
- * Sorts the given array using the merge sort algorithm
- * 
- * @param arr The array to sort
- * @param size The number of elements in the array
- * 
- */
+     * Sorts the given array using the merge sort algorithm
+     * 
+     * @param arr The array to sort
+     * @param size The number of elements in the array
+     * 
+     */
     void mergeSort(int arr[], int size)
     {
         if (size <= 1)
@@ -173,12 +173,12 @@ namespace sorting
     }
 
     /**
- * Sorts the given array using the insertion sort algorithm
- * 
- * @param arr The array to sort
- * @param size The number of elements in the array
- * 
- */
+     * Sorts the given array using the insertion sort algorithm
+     * 
+     * @param arr The array to sort
+     * @param size The number of elements in the array
+     * 
+     */
     void insertionSort(int arr[], int size)
     {
         for (int i = 1; i < size; i++)
@@ -195,12 +195,12 @@ namespace sorting
     }
 
     /**
- * Sorts the given array using the quick sort algorithm
- * 
- * @param arr The array to sort
- * @param size The number of elements in the array
- * 
- */
+     * Sorts the given array using the quick sort algorithm
+     * 
+     * @param arr The array to sort
+     * @param size The number of elements in the array
+     * 
+     */
     void quickSort(int arr[], int size)
     {
         if (size <= 1)
@@ -266,14 +266,14 @@ namespace sorting
     }
 
     /**
- * Sorts the given array using the counting sort algorithm
- * PRECONDITION: The elements must be nonnegative
- * 
- * @param arr The array to sort
- * @param size The number of elements in the array
- * 
- */
-    void countingSort10(int arr[], int size)
+     * Sorts the given array using the counting sort algorithm
+     * PRECONDITION: The elements must be nonnegative
+     * 
+     * @param arr The array to sort
+     * @param size The number of elements in the array
+     * 
+     */
+    void countingSort(int arr[], int size)
     {
         int *copy = new int[size];
         int maxKey = max(arr, size);
@@ -305,13 +305,13 @@ namespace sorting
     }
 
     /**
- * Sorts the given array using the radix sort algorithm
- * PRECONDITION: The elements must be nonnegative
- * 
- * @param arr The array to sort
- * @param size The number of elements in the array
- * 
- */
+     * Sorts the given array using the radix sort algorithm
+     * PRECONDITION: The elements must be nonnegative
+     * 
+     * @param arr The array to sort
+     * @param size The number of elements in the array
+     * 
+     */
     void radixSort(int arr[], int size)
     {
         int *copy = new int[size];
@@ -348,14 +348,14 @@ namespace sorting
     }
 
     /**
- * Sorts the given array using the specified algorithm
- * 
- * @param arr The array to sort
- * @param size The number of elements in the array
- * @param algorithm The algorithm to use
- * 
- */
-    void sort(int arr[], int size, const SortingAlgorithm algorithm)
+     * Sorts the given array using the specified algorithm
+     * 
+     * @param arr The array to sort
+     * @param size The number of elements in the array
+     * @param algorithm The algorithm to use
+     * 
+     */
+    void sort(int arr[], int size, const SortingAlgorithm algorithm = SortingAlgorithm::DEFAULT)
     {
         switch (algorithm)
         {
@@ -375,7 +375,7 @@ namespace sorting
             quickSort(arr, size);
             break;
         case SortingAlgorithm::COUNTING_SORT:
-            countingSort10(arr, size);
+            countingSort(arr, size);
             break;
         case SortingAlgorithm::RADIX_SORT:
             radixSort(arr, size);

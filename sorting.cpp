@@ -11,9 +11,6 @@
 using namespace std;
 using namespace sorting;
 
-void sorting::print(const int arr[], const int size);
-void sorting::sort(int arr[], const int size, const SortingAlgorithm algorithm = SortingAlgorithm::DEFAULT);
-ostream& sorting::operator<<(ostream &out, const SortingAlgorithm algorithm);
 
 int main()
 {
